@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+  <title>Calculadora Hipotecaria</title>
+</head>
+<body>
+  <div class="background">
+    <h1>Súper Calculadora Hipotecaria</h1>
+    <form onsubmit="calcularValorMensual();return false">
+      <p>Completa los datos para calcular tu valor a pagar.</p>
+      <input type="number" id="cantidad" class="input-form" placeholder="Cantidad (€)" name="cantidad" required/>
+      <input type="number" id="cuotas" class="input-form" placeholder="Número de cuotas" name="cuotas" required/>
+      <input type="number" step="any" id="tipo" class="input-form" placeholder="Tipo de interés anual (%)" name="tipo" required/>
+      <input type="submit" class="input-form boton boton-principal" value="Calcular" title="Calcular" name="Calcular" onsubmit="calcularValorMensual()"/>
+      <h2>Valor mensual a pagar</h2>
+      <p id="resultado">€ 00.00</p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
