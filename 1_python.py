@@ -1,3 +1,4 @@
+# Para la implementación de Pandas, se debe instalar la libreria 'pandas' y 'openpyxl'
 import pandas
 # Se lee el archivo
 xlsx = pandas.ExcelFile('archive.xlsx')
